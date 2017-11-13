@@ -24,8 +24,7 @@ t_ship *create_ship()
   ship->cont = 'b';
   if (ship == NULL)
       {
-        my_putstr_color("red", "le vaisseau n'a pas pu être construit pa\
-r manque de matériaux\n");
+        my_putstr_color("red", "le vaisseau n'a pas pu être construit par manque de matériaux\n");
       return (0);
       }
     ship->hull = 50;
@@ -41,8 +40,7 @@ int add_ftl_drive_to_ship(t_ship *ship)
   ftl_drive = malloc (sizeof(t_ftl_drive));
   if (ftl_drive == NULL)
     {
-      my_putstr_color("red", "votre vaisseau a explosé quand vous avez p\
-osé le réacteur\n");
+      my_putstr_color("red", "votre vaisseau a explosé quand vous avez posé le réacteur\n");
       return (0);
     }
   ftl_drive->energy = 10;
@@ -61,16 +59,14 @@ int add_navigation_tools_to_ship(t_ship *ship)
   navigation_tools = malloc (sizeof(t_navigation_tools));
   if (navigation_tools == NULL)
     {
-      my_putstr_color("red", "votre vaisseau a explosé quand vous avez p\
-osé les outils de navigations\n");
+      my_putstr_color("red", "votre vaisseau a explosé quand vous avez posé les outils de navigations\n");
       return (0);
     }
   navigation_tools->sector = 0;
   navigation_tools->evade = 25;
   navigation_tools->system_state = my_strdup("online");
   ship->navigation_tools = navigation_tools;
-  my_putstr_color("green", "les outils de navigations ont été ajouté ave\
-c succes!\n");
+  my_putstr_color("green", "les outils de navigations ont été ajouté avec succes!\n");
   return (1);
 }
 
