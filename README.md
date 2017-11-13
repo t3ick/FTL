@@ -1,2 +1,2 @@
 # FTL
-Faster Than the Light
+Faster Than Light
