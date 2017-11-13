@@ -9,7 +9,7 @@
 */
 
 #ifndef     _FTL_H_
-# define    _FTL_H_
+#define    _FTL_H_
 
 #include <stdlib.h>
 #include <time.h>
